@@ -1,0 +1,33 @@
+#Hotel Menu
+menu = { 
+    'pizza': 120,
+    'burger': 80,
+    'salad': 60,
+    'pasta': 100,
+    'coffee': 40,
+}
+
+print("Welcome to our hotel!\nHere is our menu:")
+
+for item, price in menu.items():
+    print(f"{item}: Rs{price}")
+
+order_total = 0
+
+item_1 = input("Please enter the item you would like to order: ")
+if item_1 in menu:
+    print(f"Thank you for ordering {item_1}! Your total is Rs{menu[item_1]}.")
+    order_total += menu[item_1]
+else:
+    print("Sorry, we don't have that item on the menu.")
+
+another_item = input("Would you like to order another item? (yes/no): ")
+if another_item == 'yes':
+    item_2 = input("Please enter the second item you would like to order: ")
+    if item_2 in menu:
+        print(f"Thank you for ordering {item_2}! Your total is Rs{menu[item_2]}.")
+        order_total += menu[item_2]
+    else:
+        print("Sorry, we don't have that item on the menu.")   
+    
+print(f"Your total order amount is Rs{order_total}. Thank you for dining with us!")
