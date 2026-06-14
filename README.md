@@ -35,6 +35,8 @@ Total Amount: Rs360
 
 ```bash
 python hotelmenu.py
+python loop.py
+python multipleorders.py
 ```
 
 ## Future Improvements
