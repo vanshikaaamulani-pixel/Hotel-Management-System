@@ -34,7 +34,7 @@ Total Amount: Rs360
 3. Run:
 
 ```bash
-python hotel_menu.py
+python hotelmenu.py
 ```
 
 ## Future Improvements
